@@ -1,0 +1,16 @@
+.side-icons{
+    // margin: 0 0.8rem;
+    margin: 0 1.2rem;
+}
+
+.side__icon{
+    color: white;
+    font-size: $font-size-16;
+    transition: all 400ms;
+    i{
+        margin: 0.9375rem 0;
+    }
+    &:hover{
+        color: $basic;
+    }
+}

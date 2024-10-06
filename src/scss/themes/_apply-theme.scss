@@ -1,0 +1,12 @@
+@import 'theme';
+@import 'default-theme';
+
+
+@include theme(
+    $basic,
+    $bg-dark,
+    $bg-gray,
+    $border-gray,
+    $text-gray,
+    $rounded-2
+)

@@ -1,0 +1,30 @@
+// @import 'node_modules/bootstrap/scss/bootstrap';
+// src/scss/base/_base.scss
+
+// @import '~bootstrap/scss/bootstrap';
+
+*,
+*::after,
+*::before{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+// html{
+//     font-size: 62.5%;
+// }
+body{
+
+    // background-color:  #712cf9;
+    // background: linear-gradient(to right bottom, #712cf9, #32146d);
+    // height: 100vh;
+    font-size: 1.4rem;
+    font-family: $font-primary;
+    background-color: $bg-dark;
+    // line-height: 1.6em;
+    padding: 0;
+    margin: 0;
+}

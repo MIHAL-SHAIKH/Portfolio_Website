@@ -1,0 +1,15 @@
+@mixin theme(
+  $basic-color, 
+  $bg-dark-color, 
+  $bg-gray-color, 
+  $border-gray-color, 
+  $text-gray-color, 
+  $rounded-2-radius
+) {
+    $basic: $basic-color;
+    $bg-dark: $bg-dark-color;
+    $bg-gray: $bg-gray-color;
+    $border-gray: $border-gray-color;
+    $text-gray: $text-gray-color;
+    $rounded-2: $rounded-2-radius;
+}

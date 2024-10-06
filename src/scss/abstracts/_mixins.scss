@@ -1,0 +1,64 @@
+@mixin text-transition{
+  transition: all 300ms;
+}
+
+@mixin icon-big {
+    font-size: 12.5rem;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    color: $basic;
+    opacity: .1;
+  }
+@mixin row-img($url){
+  background: url($url) center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  max-height: 929px;
+  // animation: img_animation 1.5s ease;
+}
+// animation
+
+// @keyframes img_animation{
+//   30%{
+//       transform: translateY(-150px);
+//   }
+//   50%{
+//       transform: translateY(70px);
+//   }
+//   80%{
+//     transform: translateY(-30px);
+//   }
+//   100%{
+//       transform: translateY(0);
+//   }
+// }
+// media queries
+
+@mixin respond($breakpoint){
+  @if $breakpoint == 'desktop'{
+    @media screen 
+    and (min-width:1024px){ @content;}
+  };
+
+  @if $breakpoint == 'tablet'{
+    @media screen 
+    and (min-width:768px)
+    and (max-width:1024px){@content;}
+  };
+  @if $breakpoint == 'mobile-port-land'{
+    @media screen 
+    and (max-width:640px){@content;}
+  };
+  @if $breakpoint == 'mobile-land'{
+    @media screen 
+    and (max-width:640px)
+    and (orientation: landscape){@content;}
+  };
+  @if $breakpoint == 'mobile-port'{
+    @media screen 
+    and (max-width:480px)
+    and (orientation:portrait){@content;};
+    };
+  }
