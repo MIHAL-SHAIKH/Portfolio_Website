@@ -7,6 +7,7 @@
     color: white;
     font-size: $font-size-16;
     transition: all 400ms;
+    text-decoration: none;
     i{
         margin: 0.9375rem 0;
     }
@@ -14,3 +15,27 @@
         color: $basic;
     }
 }
+
+.side__icon + .copy-link{
+    color: black;
+    font-size: $font-size-12;
+    transition: all 300ms ease-out;
+}
+.side__icon.active + .copy-link{
+    opacity: 1 !important;
+}
+.side__icon.active + .copy-link .copy-link__inner{
+    cursor:pointer;
+
+}
+.copy-link{
+    &__inner{
+        background-color: $basic-secondary;
+        cursor:default;
+    }
+}
+.copy-link__inner.clicked{
+    color: rgb(122, 247, 13) !important;
+    background-color: transparent;
+}
+

@@ -2,6 +2,7 @@
 
 // $basic:#ff0000;
 $basic:rgb(123, 97, 255);
+$basic-secondary : #CDC1FF;
 $bg-dark:#111111;
 $bg-gray:#181818;
 $border-gray:#1d1d1d;
@@ -11,6 +12,7 @@ $text-gray-light: #777777;
     
 // border-radius
 $rounded-2: 2px;
-$primary: #7b61ff;
+$primary: $basic;
+$secondary: $basic-secondary;
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
