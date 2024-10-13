@@ -21,7 +21,9 @@
 <body class="overflow-hidden">
     <nav class="navbar navbar-expand-lg position-fixed w-100">
         <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand p-0 fw-bold text-white px-3" href="#">Mihal Shaikh</a>         
+          <a class="navbar-brand position-relative p-0 fw-bold text-white px-3" href="#">
+            <div class="d-none d-lg-inline position-absolute h-100 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></div>
+            Mihal Shaikh</a>         
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -63,7 +65,7 @@
             </ul>
           </div>
           <div class="px-4">
-            <a href="public/resume/dummy.pdf" download="dummy.pdf" class="download-cv text-white fw-bolder btn bg-transparent py-2 px-3 d-none d-lg-block">
+            <a href="public/resume/dummy.pdf" download="dummy.pdf" class="download-cv text-white fw-bolder btn  py-2 px-3 d-none d-lg-block">
               <i class="fa-regular fa-file me-2"></i>
               Download CV
             </a>
@@ -135,55 +137,55 @@
     </div>
     <!-- offcanvas body -->
     <main>
-          <div class="position-fixed top-0 start-0 d-flex align-items-center h-100 z-3">
+          <div class="position-fixed top-0 end-0 d-flex align-items-center h-100 z-3">
             <ul class="side-icons p-0">
-              <li>
+              <li class="d-flex align-items-center flex-row-reverse">
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <div class="copy-link opacity-0 d-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 ms-3">
+                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
               </li>
-              <li>
+              <li class="d-flex align-items-center flex-row-reverse">
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
                 <div class="copy-link opacity-0 d-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 ms-3">
+                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
               </li>
-              <li>
+              <li class="d-flex align-items-center flex-row-reverse">
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="www.mylink.com">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
                 <div class="copy-link opacity-0 d-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 ms-3">
+                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     <span>Copy</span>
                     <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
               </li>
-              <li>
+              <li class="d-flex align-items-center flex-row-reverse">
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
                 <div class="copy-link opacity-0 d-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 ms-3">
+                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
               </li>
-              <li>
+              <li class="d-flex align-items-center flex-row-reverse">
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="mailto:mehal.shaikh@outlook.com" data-link="mehal.shaikh@outlook.com">
                   <i class="fa-regular fa-envelope"></i>
                 </a>
                 <div class="copy-link opacity-0 d-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 ms-3">
+                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
@@ -194,7 +196,7 @@
         <div class="container position-absolute top-50 start-50 translate-middle">
           <div class="row">
             <div class="col-12">
-              <div class="home-welcome text-center">
+              <div class="home-welcome text-start">
                 <p class="home-welcome__note mb-5 text-primary">Hi, welcome to my personal website.</p>
                 <h1 class="home-welcome__heading text-white fw-bolder">
                   My name Mihal Shaikh, a <br>

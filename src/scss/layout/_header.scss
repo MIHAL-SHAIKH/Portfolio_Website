@@ -11,6 +11,8 @@
         color: red;
         border: solid 1px rgba(255,255,255, .1);
         border-radius: $rounded-2;
+        background: rgba(255, 255, 255, 0.084);
+        backdrop-filter: blur(5px);
         @include text-transition;
 
         i{
