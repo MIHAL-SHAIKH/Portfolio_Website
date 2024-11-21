@@ -2,8 +2,8 @@ $(document).ready(function () {
   const mediaQuery = window.matchMedia('(max-width: 992px)');
 
   if(mediaQuery.matches){
-    console.warn('logged',mediaQuery)
-    alert(mediaQuery)
+    // console.warn('logged',mediaQuery)
+    // alert(mediaQuery)
     $(document).on('click',function() {
       if (!event.target.classList.contains('copy-link__inner')) {
         $('.side__icon').removeClass('active');

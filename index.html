@@ -1,125 +1,209 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BootSass</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <script defer src='node_modules\autotyping\dist\AutoTyping.min.js'></script>
+    <script defer src="node_modules\autotyping\dist\AutoTyping.min.js"></script>
     <script defer src="index.js"></script>
 
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- <script defer src="index.js"></script> -->
-    <link rel="stylesheet" href="dist/css/main.css">
-</head>
-<body class="overflow-hidden">
+    <link rel="stylesheet" href="dist/css/main.css" />
+  </head>
+  <body class="overflow-hidden">
     <nav class="navbar navbar-expand-lg position-fixed w-100">
-        <div class="container-fluid d-flex justify-content-between">
-          <a class="navbar-brand position-relative p-0 fw-bold text-white px-3" href="#">
-            <div class="d-none d-lg-inline position-absolute h-100 w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></div>
-            Mihal Shaikh</a>         
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase active" href="#home">
-                  <span class="nums d-block">01</span>
-                  <span>Home</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase" href="#services">
-                  <span class="nums d-block">02</span>
-                  <span>services</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase" href="#experience">
-                  <span class="nums d-block">03</span>
-                  <span>Experience</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase" href="#protfolio">
-                  <span class="nums d-block">04</span>
-                  <span>Portfolio</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase" href="#blogs">
-                  <span class="nums d-block">05</span>
-                  <span>Blog</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white fw-bolder text-uppercase" href="#contact">
-                  <span class="nums d-block">06</span>
-                  <span>contact</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="px-4">
-            <a href="public/resume/dummy.pdf" download="dummy.pdf" class="download-cv text-white fw-bolder btn  py-2 px-3 d-none d-lg-block">
-              <i class="fa-regular fa-file me-2"></i>
-              Download CV
-            </a>
-          </div>
-          <button class="btn d-block d-lg-none text-white ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-            <i class="fa-solid fa-bars fs-2"></i>
-          </button> 
-        </div>
-    </nav>
-    <!-- offcanvas body -->
-    <div class="offcanvas offcanvas-start w-100 bg-transparent" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <a class="navbar-brand p-0 fw-bold text-white px-3" href="#">Mihal Shaikh</a>
-        </h5>
-        <button type="button" class="offcanvas-btn__close btn text-white fw-medium ms-auto" data-bs-dismiss="offcanvas">
-          <i class="fa-solid fa-chevron-left"></i>
-          back</button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="p-0">
+      <div class="container-fluid d-flex justify-content-between">
+        <a
+          class="navbar-brand position-relative p-0 fw-bold text-white px-3"
+          href="#"
+        >
+          <div
+            class="d-none d-lg-inline position-absolute h-100 w-100"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          ></div>
+          Mihal Shaikh</a
+        >
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase active" href="#home">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase active"
+                href="#home"
+              >
                 <span class="nums d-block">01</span>
                 <span>Home</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase" href="#services">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#services"
+              >
                 <span class="nums d-block">02</span>
                 <span>services</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase" href="#experience">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#experience"
+              >
                 <span class="nums d-block">03</span>
                 <span>Experience</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase" href="#protfolio">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#protfolio"
+              >
                 <span class="nums d-block">04</span>
                 <span>Portfolio</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase" href="#blogs">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#blogs"
+              >
                 <span class="nums d-block">05</span>
                 <span>Blog</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fw-bolder text-uppercase" href="#contact">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#contact"
+              >
+                <span class="nums d-block">06</span>
+                <span>contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-4">
+          <a
+            href="public/resume/dummy.pdf"
+            download="dummy.pdf"
+            class="download-cv text-white fw-bolder btn py-2 px-3 d-none d-lg-block"
+          >
+            <i class="fa-regular fa-file me-2"></i>
+            Download CV
+          </a>
+        </div>
+        <button
+          class="btn d-block d-lg-none text-white ms-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <i class="fa-solid fa-bars fs-2"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- offcanvas body -->
+    <div
+      class="offcanvas offcanvas-start w-100 bg-transparent"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <a class="navbar-brand p-0 fw-bold text-white px-3" href="#"
+            >Mihal Shaikh</a
+          >
+        </h5>
+        <button
+          type="button"
+          class="offcanvas-btn__close btn text-white fw-medium ms-auto"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+          back
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="p-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase active"
+                href="#home"
+              >
+                <span class="nums d-block">01</span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#services"
+              >
+                <span class="nums d-block">02</span>
+                <span>services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#experience"
+              >
+                <span class="nums d-block">03</span>
+                <span>Experience</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#protfolio"
+              >
+                <span class="nums d-block">04</span>
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#blogs"
+              >
+                <span class="nums d-block">05</span>
+                <span>Blog</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white fw-bolder text-uppercase"
+                href="#contact"
+              >
                 <span class="nums d-block">06</span>
                 <span>contact</span>
               </a>
@@ -127,7 +211,11 @@
           </ul>
         </ul>
         <div class="d-flex justify-content-center">
-          <a href="public/resume/dummy.pdf" download="dummy.pdf" class="download-cv btn btn-primary border-1 text-white fw-bolder bg-transparent py-2 px-3">
+          <a
+            href="public/resume/dummy.pdf"
+            download="dummy.pdf"
+            class="download-cv btn btn-primary border-1 text-white fw-bolder bg-transparent py-2 px-3"
+          >
             <i class="fa-regular fa-file me-2"></i>
             Download CV
           </a>
@@ -137,70 +225,92 @@
     </div>
     <!-- offcanvas body -->
     <main>
-          <div class="position-absolute z-3 top-0 end-0 d-flex align-items-center h-100">
-            <ul class="side-icons p-0">
-              <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="https://www.frontendmentor.io/profile/MIHAL-SHAIKH">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <div class="copy-link opacity-0 d-none d-lg-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
-                    Copy <i class="fa-solid fa-copy"></i>
-                  </span>
-                </div>
-              </li>
-              <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <div class="copy-link opacity-0 d-none d-lg-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
-                    Copy <i class="fa-solid fa-copy"></i>
-                  </span>
-                </div>
-              </li>
-              <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="https://github.com/MIHAL-SHAIKH">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <div class="copy-link opacity-0 d-none d-lg-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
-                    <span>Copy</span>
-                    <i class="fa-solid fa-copy"></i>
-                  </span>
-                </div>
-              </li>
-              <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <div class="copy-link opacity-0 d-none d-lg-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
-                    Copy <i class="fa-solid fa-copy"></i>
-                  </span>
-                </div>
-              </li>
-              <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="mailto:mehal.shaikh@outlook.com" data-link="mehal.shaikh@outlook.com">
-                  <i class="fa-regular fa-envelope"></i>
-                </a>
-                <div class="copy-link opacity-0 d-none d-lg-inline">
-                  <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
-                    Copy <i class="fa-solid fa-copy"></i>
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-      <section id="home" class="home vh-100 active-section overflow-y-auto position-relative">
-        <div class="container position-absolute top-50 start-50 translate-middle">
+      <div
+        class="position-absolute z-3 top-0 end-0 d-flex align-items-center h-100"
+      >
+        <ul class="side-icons p-0">
+          <li class="d-flex align-items-center flex-row-reverse">
+            <a
+              onmouseenter="toggleActive(this)"
+              class="side__icon"
+              href="https://www.frontendmentor.io/profile/MIHAL-SHAIKH"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <div class="copy-link opacity-0 d-none d-lg-inline">
+              <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
+                Copy <i class="fa-solid fa-copy"></i>
+              </span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center flex-row-reverse">
+            <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <div class="copy-link opacity-0 d-none d-lg-inline">
+              <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
+                Copy <i class="fa-solid fa-copy"></i>
+              </span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center flex-row-reverse">
+            <a
+              onmouseenter="toggleActive(this)"
+              class="side__icon"
+              href="https://github.com/MIHAL-SHAIKH"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <div class="copy-link opacity-0 d-none d-lg-inline">
+              <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
+                <span>Copy</span>
+                <i class="fa-solid fa-copy"></i>
+              </span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center flex-row-reverse">
+            <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <div class="copy-link opacity-0 d-none d-lg-inline">
+              <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
+                Copy <i class="fa-solid fa-copy"></i>
+              </span>
+            </div>
+          </li>
+          <li class="d-flex align-items-center flex-row-reverse">
+            <a
+              onmouseenter="toggleActive(this)"
+              class="side__icon"
+              href="mailto:mehal.shaikh@outlook.com"
+              data-link="mehal.shaikh@outlook.com"
+            >
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <div class="copy-link opacity-0 d-none d-lg-inline">
+              <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
+                Copy <i class="fa-solid fa-copy"></i>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <section
+        id="home"
+        class="home vh-100 active-section overflow-y-auto position-relative"
+      >
+        <div
+          class="container position-absolute top-50 start-50 translate-middle"
+        >
           <div class="row">
             <div class="col-12">
               <div class="home-welcome text-start">
-                <p class="home-welcome__note mb-5 text-primary">Hi, welcome to my personal website.</p>
+                <p class="home-welcome__note mb-5 text-primary">
+                  Hi, welcome to my personal website.
+                </p>
                 <h1 class="home-welcome__heading text-white fw-bolder">
-                  My name Mihal Shaikh, a <br>
-                  Mumbai based 
+                  My name Mihal Shaikh, a <br />
+                  Mumbai based
                   <span class="text-white d-inline-block" id="profesion"></span>
                 </h1>
               </div>
@@ -208,11 +318,13 @@
           </div>
         </div>
       </section>
-      <section id="services" class="service container-fluid h-auto p-0 position-relative overflow-x-hidden">
-        <div class="service-row row vh-100 overflow-y-scroll"> 
+      <section
+        id="services"
+        class="service container-fluid h-auto p-0 position-relative overflow-x-hidden"
+      >
+        <div class="service-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="service-img-container h-100 w-100">
-            </div>
+            <div class="service-img-container h-100 w-100"></div>
           </div>
           <div class="service-col2 col-12 col-md-6 align-items-stretch">
             <div class="card-wrapper w-100 position-relative overflow-hidden">
@@ -220,7 +332,10 @@
                 <i class="icon-small text-primary fa-solid fa-code"></i>
                 <div class="card-text-wrapper">
                   <h3 class="card__header text-white">Market Inteligence</h3>
-                  <p class="card__text mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                  <p class="card__text mb-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem.
+                  </p>
                 </div>
               </div>
               <i class="icon-big fa-solid fa-code"></i>
@@ -230,7 +345,10 @@
                 <i class="icon-small text-primary fa-solid fa-code"></i>
                 <div class="card-text-wrapper">
                   <h3 class="card__header text-white">Market Inteligence</h3>
-                  <p class="card__text mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                  <p class="card__text mb-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem.
+                  </p>
                 </div>
               </div>
               <i class="icon-big fa-solid fa-code"></i>
@@ -240,7 +358,10 @@
                 <i class="icon-small text-primary fa-solid fa-code"></i>
                 <div class="card-text-wrapper">
                   <h3 class="card__header text-white">Market Inteligence</h3>
-                  <p class="card__text mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.</p>
+                  <p class="card__text mb-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem.
+                  </p>
                 </div>
               </div>
               <i class="icon-big fa-solid fa-code"></i>
@@ -249,74 +370,169 @@
         </div>
       </section>
       <!-- experience section -->
-      <section id="experience" class="experience container-fluid h-auto p-0 position-relative overflow-x-hidden">
-        <div class="experience-row row vh-100 overflow-y-scroll"> 
+      <section
+        id="experience"
+        class="experience container-fluid h-auto p-0 position-relative overflow-x-hidden"
+      >
+        <div class="experience-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="experience-img-container h-100 w-100">
-            </div>
+            <div class="experience-img-container h-100 w-100"></div>
           </div>
           <div class="experience-col2 col-12 col-md-6 align-items-stretch">
-            <p class="experience-head">I am a website designer from London, with a strong focus in UI/UX design. I love to get new experiences and always learn from my surroundings. I've done more than 285 projects. I looking forward to any opportunities and challenges.</p>
+            <p class="experience-head">
+              I am a website designer from London, with a strong focus in UI/UX
+              design. I love to get new experiences and always learn from my
+              surroundings. I've done more than 285 projects. I looking forward
+              to any opportunities and challenges.
+            </p>
             <div class="experience-tab-wrapper">
               <ul class="nav nav-pills" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link position-relative fw-semibold bg-transparent p-0 active" id="works-tab" data-bs-toggle="pill" data-bs-target="#works" type="button" role="tab" aria-controls="works" aria-selected="true">Works</button>
+                  <button
+                    class="nav-link position-relative fw-semibold bg-transparent p-0 active"
+                    id="works-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#works"
+                    type="button"
+                    role="tab"
+                    aria-controls="works"
+                    aria-selected="true"
+                  >
+                    Works
+                  </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link position-relative fw-semibold bg-transparent p-0" id="education-tab" data-bs-toggle="pill" data-bs-target="#education" type="button" role="tab" aria-controls="education" aria-selected="false">Education</button>
+                  <button
+                    class="nav-link position-relative fw-semibold bg-transparent p-0"
+                    id="education-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#education"
+                    type="button"
+                    role="tab"
+                    aria-controls="education"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="works" role="tabpanel" aria-labelledby="works-tab" tabindex="0">
+                <div
+                  class="tab-pane fade show active"
+                  id="works"
+                  role="tabpanel"
+                  aria-labelledby="works-tab"
+                  tabindex="0"
+                >
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2014</span>
                       -
                       <span>now</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2010</span>
                       -
                       <span>2014</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2016</span>
                       -
                       <span>2020</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab" tabindex="0">
+                <div
+                  class="tab-pane fade"
+                  id="education"
+                  role="tabpanel"
+                  aria-labelledby="education-tab"
+                  tabindex="0"
+                >
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2016</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2016</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                   <div class="experience-card-wrapper">
-                    <h5 class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder">
+                    <h5
+                      class="experience-card-header1 text-white bg-primary d-inline-block fw-bolder"
+                    >
                       <span>2016</span>
                     </h5>
-                    <h3 class="experience-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                    <p class="experience-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                    <h3 class="experience-card-header2 text-white fw-bolder">
+                      Product Designer Freelancer
+                    </h3>
+                    <p class="experience-card-para">
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore veritatis et
+                      quasi architecto beatae.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -330,88 +546,148 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="swiper-slide protfolio-slide">
               <div class="bg-black position-relative h-100">
-                <img src="./public/protfollio2.jpg" alt="" class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover">
+                <img
+                  src="./public/protfollio2.jpg"
+                  alt=""
+                  class="protfolio-img position-absolute img-fluid h-100 w-100 object-fit-cover"
+                />
                 <div class="position-relative w-100 h-100">
                   <div class="protfolio-text position-absolute start-0">
-                    <h2 class="protfolio-text-headings text-white fw-bolder">Light Bulb</h2>
+                    <h2 class="protfolio-text-headings text-white fw-bolder">
+                      Light Bulb
+                    </h2>
                     <div class="protfolio-text-border bg-primary"></div>
-                    <p class="protfolio-text-para text-white">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+                    <p class="protfolio-text-para text-white">
+                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                      aut odit aut fugit, sed quia consequuntur.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-button-next mx-4"><i class="fa-solid fa-arrow-right-long text-white fs-2"></i></div>
-          <div class="swiper-button-prev mx-4"><i class="fa-solid fa-arrow-left-long text-white fs-2"></i></div>
+          <div class="swiper-button-next mx-4">
+            <i class="fa-solid fa-arrow-right-long text-white fs-2"></i>
+          </div>
+          <div class="swiper-button-prev mx-4">
+            <i class="fa-solid fa-arrow-left-long text-white fs-2"></i>
+          </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
       </section>
       <!-- blogs section -->
-      <section id="blogs" class="blogs container-fluid h-auto p-0 position-relative overflow-x-hidden">
-        <div class="blogs-row row vh-100 overflow-y-scroll"> 
+      <section
+        id="blogs"
+        class="blogs container-fluid h-auto p-0 position-relative overflow-x-hidden"
+      >
+        <div class="blogs-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="blogs-img-container h-100 w-100">
-            </div>
+            <div class="blogs-img-container h-100 w-100"></div>
           </div>
           <div class="blogs-col2 col-12 col-md-6 align-items-stretch">
             <div class="blogs-card-wrapper d-flex align-items-start">
@@ -420,8 +696,15 @@
                 <span class="monthe fw-light text-uppercase">Mar</span>
               </h5>
               <div class="ps-4 pb-2">
-                <h3 class="blogs-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                <p class="blogs-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                <h3 class="blogs-card-header2 text-white fw-bolder">
+                  Product Designer Freelancer
+                </h3>
+                <p class="blogs-card-para">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
               </div>
             </div>
             <div class="blogs-card-wrapper d-flex align-items-start">
@@ -430,8 +713,15 @@
                 <span class="monthe fw-light text-uppercase">Mar</span>
               </h5>
               <div class="ps-4 pb-2">
-                <h3 class="blogs-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                <p class="blogs-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                <h3 class="blogs-card-header2 text-white fw-bolder">
+                  Product Designer Freelancer
+                </h3>
+                <p class="blogs-card-para">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
               </div>
             </div>
             <div class="blogs-card-wrapper d-flex align-items-start">
@@ -440,8 +730,15 @@
                 <span class="monthe fw-light text-uppercase">Mar</span>
               </h5>
               <div class="ps-4 pb-2">
-                <h3 class="blogs-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                <p class="blogs-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                <h3 class="blogs-card-header2 text-white fw-bolder">
+                  Product Designer Freelancer
+                </h3>
+                <p class="blogs-card-para">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
               </div>
             </div>
             <div class="blogs-card-wrapper d-flex align-items-start">
@@ -450,19 +747,28 @@
                 <span class="monthe fw-light text-uppercase">Mar</span>
               </h5>
               <div class="ps-4 pb-2">
-                <h3 class="blogs-card-header2 text-white fw-bolder">Product Designer Freelancer</h3>
-                <p class="blogs-card-para">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+                <h3 class="blogs-card-header2 text-white fw-bolder">
+                  Product Designer Freelancer
+                </h3>
+                <p class="blogs-card-para">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque
+                  ipsa quae ab illo inventore veritatis et quasi architecto
+                  beatae.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- contact section -->
-      <section id="contact" class="contact container-fluid h-auto position-relative overflow-x-hidden">
-        <div class="contact-row row vh-100 overflow-y-scroll"> 
+      <section
+        id="contact"
+        class="contact container-fluid h-auto position-relative overflow-x-hidden"
+      >
+        <div class="contact-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="contact-img-container h-100 w-100">
-            </div>
+            <div class="contact-img-container h-100 w-100"></div>
           </div>
           <div class="contact-col2 col-12 col-md-6 align-items-stretch">
             <div class="contact-info-card-wrapper w-100">
@@ -481,7 +787,9 @@
                 </li>
                 <li>
                   <span class="contact-heades text-white">Address</span>
-                  <span class="contact-data">Collins Street West, London, UK</span>
+                  <span class="contact-data"
+                    >Collins Street West, London, UK</span
+                  >
                 </li>
               </ul>
             </div>
@@ -489,27 +797,55 @@
               <h2 class="contact-form-header text-white">Send message</h2>
               <form action="">
                 <div class="contact-inputs mb-4">
-                  <input type="name" class="form-control text-white bg-transparent shadow-none" id="formControlname" placeholder="Your Name">
+                  <input
+                    type="name"
+                    class="form-control text-white bg-transparent shadow-none"
+                    id="formControlname"
+                    placeholder="Your Name"
+                  />
                 </div>
                 <div class="contact-inputs mb-4">
-                  <input type="email" class="form-control text-white bg-transparent shadow-none" id="formControlemail" placeholder="Your Email">
+                  <input
+                    type="email"
+                    class="form-control text-white bg-transparent shadow-none"
+                    id="formControlemail"
+                    placeholder="Your Email"
+                  />
                 </div>
                 <div class="contact-inputs mb-4">
-                  <input type="tel" class="form-control text-white bg-transparent shadow-none" id="formControlphone" placeholder="Your Phone">
+                  <input
+                    type="tel"
+                    class="form-control text-white bg-transparent shadow-none"
+                    id="formControlphone"
+                    placeholder="Your Phone"
+                  />
                 </div>
                 <div class="contact-inputs mb-4">
-                  <textarea class="form-control text-white bg-transparent shadow-none" id="exampleFormControlTextarea1" placeholder="Your Message" rows="7"></textarea>
+                  <textarea
+                    class="form-control text-white bg-transparent shadow-none"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Your Message"
+                    rows="7"
+                  ></textarea>
                 </div>
-                <button class="contact-btn__send bg-primary border-0 text-white text-uppercase" type="submit">Send</button>
+                <button
+                  class="contact-btn__send bg-primary border-0 text-white text-uppercase"
+                  type="submit"
+                >
+                  Send
+                </button>
               </form>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

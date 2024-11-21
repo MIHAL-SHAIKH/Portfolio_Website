@@ -11916,17 +11916,23 @@ body {
   backdrop-filter: blur(10px);
 }
 
-.service-col2, .experience-col2, .blogs-col2, .contact-col2 {
+.service-col2,
+.experience-col2,
+.blogs-col2,
+.contact-col2 {
   padding: 6.25rem 3.75rem 5.625rem 3.75rem;
 }
 @media screen and (max-width: 480px) and (orientation: portrait) {
-  .service-col2, .experience-col2, .blogs-col2, .contact-col2 {
+  .service-col2,
+  .experience-col2,
+  .blogs-col2,
+  .contact-col2 {
     padding: 2rem;
   }
 }
 
 .home {
-  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../../public/home.jpg");
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/public/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -11945,7 +11951,7 @@ body {
 }
 
 .service-img-container {
-  background: url("../../../public/section2.jpg") center top;
+  background: url("/public/section2.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
@@ -11989,7 +11995,9 @@ body {
 .card-wrapper:hover {
   background-color: rgb(123, 97, 255);
 }
-.card-wrapper:hover .card__header, .card-wrapper:hover .card__text, .card-wrapper:hover .icon-small {
+.card-wrapper:hover .card__header,
+.card-wrapper:hover .card__text,
+.card-wrapper:hover .icon-small {
   color: white !important;
 }
 .card-wrapper:hover .icon-big {
@@ -12023,41 +12031,48 @@ body {
 }
 
 .experience-img-container {
-  background: url("../../../public/section3.jpg") center top;
+  background: url("/public/section3.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
   max-height: 929px;
 }
 
-.experience .nav, .blogs .nav {
+.experience .nav,
+.blogs .nav {
   border-bottom: 2px solid #1d1d1d;
 }
-.experience-card-wrapper, .blogs-card-wrapper {
+.experience-card-wrapper,
+.blogs-card-wrapper {
   border-bottom: 2px solid #1d1d1d;
   margin-bottom: 4%;
 }
-.experience .tab-content, .blogs .tab-content {
+.experience .tab-content,
+.blogs .tab-content {
   padding: 5% 0 0 0;
 }
-.experience-card-header1, .blogs-card-header1 {
+.experience-card-header1,
+.blogs-card-header1 {
   font-size: 0.8125rem;
   border-radius: 2px;
   margin-bottom: 1.2rem;
   padding: 6px 12px;
 }
-.experience-card-header2, .blogs-card-header2 {
+.experience-card-header2,
+.blogs-card-header2 {
   font-size: 1.125rem;
   margin-bottom: 1rem;
 }
-.experience-card-para, .blogs-card-para {
+.experience-card-para,
+.blogs-card-para {
   font-size: 0.9375rem;
   color: #777777;
   line-height: 1.7em;
   margin-bottom: 3%;
 }
 
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   display: none;
 }
 
@@ -12104,7 +12119,7 @@ body {
 }
 
 .blogs-img-container {
-  background: url("../../../public/blogs.jpg") center top;
+  background: url("/public/blogs.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
@@ -12125,7 +12140,7 @@ body {
 }
 
 .contact-img-container {
-  background: url("../../../public/contact.jpg") center top;
+  background: url("/public/contact.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 60vh;
