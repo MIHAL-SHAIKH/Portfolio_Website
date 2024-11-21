@@ -2,6 +2,8 @@
 .service-col2,.experience-col2,.blogs-col2,.contact-col2{
     // padding: 100px 60px 90px 60px;
     padding: 6.25rem 3.75rem 5.625rem 3.75rem;
+    
+    @include respond(mobile-port){padding: 2rem;}
 }
 
 // group sections
@@ -22,6 +24,10 @@
     &-welcome__heading{
         // font-size: $font-size-56;
         font-size: calc(28px + (70 - 28) * ((100vw - 320px) / (1920 - 320)));
+
+    }
+    #profesion{
+        min-width: 170px;
     }
 }
 // home end

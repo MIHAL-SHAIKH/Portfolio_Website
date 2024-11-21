@@ -76,17 +76,17 @@
         </div>
     </nav>
     <!-- offcanvas body -->
-    <div class="offcanvas offcanvas-start w-100 bg-transparent" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px);">
+    <div class="offcanvas offcanvas-start w-100 bg-transparent" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-          <a class="navbar-brand p-0 fw-bold text-white px-3" href="#">Jonna Satria</a>
+          <a class="navbar-brand p-0 fw-bold text-white px-3" href="#">Mihal Shaikh</a>
         </h5>
         <button type="button" class="offcanvas-btn__close btn text-white fw-medium ms-auto" data-bs-dismiss="offcanvas">
           <i class="fa-solid fa-chevron-left"></i>
           back</button>
       </div>
       <div class="offcanvas-body">
-        <ul>
+        <ul class="p-0">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link text-white fw-bolder text-uppercase active" href="#home">
@@ -126,24 +126,24 @@
             </li>
           </ul>
         </ul>
-        <!-- <div class="px-4"> -->
-          <button class="download-cv btn btn-primary border-1 d-block mx-auto text-white fw-bolder bg-transparent py-2 px-3">
+        <div class="d-flex justify-content-center">
+          <a href="public/resume/dummy.pdf" download="dummy.pdf" class="download-cv btn btn-primary border-1 text-white fw-bolder bg-transparent py-2 px-3">
             <i class="fa-regular fa-file me-2"></i>
             Download CV
-          </button>
-        <!-- </div> -->
+          </a>
+        </div>
         <!-- content  -->
       </div>
     </div>
     <!-- offcanvas body -->
     <main>
-          <div class="position-fixed top-0 end-0 d-flex align-items-center h-100 z-3">
+          <div class="position-absolute z-3 top-0 end-0 d-flex align-items-center h-100">
             <ul class="side-icons p-0">
               <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
+                <a onmouseenter="toggleActive(this)" class="side__icon" href="https://www.frontendmentor.io/profile/MIHAL-SHAIKH">
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
-                <div class="copy-link opacity-0 d-inline">
+                <div class="copy-link opacity-0 d-none d-lg-inline">
                   <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
@@ -153,17 +153,17 @@
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
-                <div class="copy-link opacity-0 d-inline">
+                <div class="copy-link opacity-0 d-none d-lg-inline">
                   <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
                 </div>
               </li>
               <li class="d-flex align-items-center flex-row-reverse">
-                <a onmouseenter="toggleActive(this)" class="side__icon" href="www.mylink.com">
-                  <i class="fa-brands fa-twitter"></i>
+                <a onmouseenter="toggleActive(this)" class="side__icon" href="https://github.com/MIHAL-SHAIKH">
+                  <i class="fa-brands fa-github"></i>
                 </a>
-                <div class="copy-link opacity-0 d-inline">
+                <div class="copy-link opacity-0 d-none d-lg-inline">
                   <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     <span>Copy</span>
                     <i class="fa-solid fa-copy"></i>
@@ -174,7 +174,7 @@
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="#">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <div class="copy-link opacity-0 d-inline">
+                <div class="copy-link opacity-0 d-none d-lg-inline">
                   <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
@@ -184,7 +184,7 @@
                 <a onmouseenter="toggleActive(this)" class="side__icon" href="mailto:mehal.shaikh@outlook.com" data-link="mehal.shaikh@outlook.com">
                   <i class="fa-regular fa-envelope"></i>
                 </a>
-                <div class="copy-link opacity-0 d-inline">
+                <div class="copy-link opacity-0 d-none d-lg-inline">
                   <span class="copy-link__inner rounded-pill py-1 px-3 me-3">
                     Copy <i class="fa-solid fa-copy"></i>
                   </span>
@@ -201,7 +201,7 @@
                 <h1 class="home-welcome__heading text-white fw-bolder">
                   My name Mihal Shaikh, a <br>
                   Mumbai based 
-                  <span class="text-white" id="profesion"></span>
+                  <span class="text-white d-inline-block" id="profesion"></span>
                 </h1>
               </div>
             </div>

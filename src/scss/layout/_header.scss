@@ -1,47 +1,55 @@
-.navbar{
-    // padding: 1.875rem 0rem;
-    padding: 1.275rem 0rem;
-    z-index: 999;
+.navbar {
+  // padding: 1.875rem 0rem;
+  padding: 1.275rem 0rem;
+  z-index: 999;
 
-    .navbar-brand{
-        font-size: $font-size-24;
-    }
-    .download-cv{
-        font-size: $font-size-14;
-        color: red;
-        border: solid 1px rgba(255,255,255, .1);
-        border-radius: $rounded-2;
-        background: rgba(255, 255, 255, 0.084);
-        backdrop-filter: blur(5px);
-        @include text-transition;
-
-        i{
-            color: $basic;
-            @include text-transition;
-        }
-
-        &:hover{
-            background-color: $basic !important;
-            i{color: white;}
-        }
-
-    }
-}
-.nav-link{
-    // font-family: $font-primary;
-    line-height: 12px;
+  .navbar-brand {
+    font-size: $font-size-24;
+  }
+  .download-cv {
+    font-size: $font-size-14;
+    color: red;
+    border: solid 1px rgba(255, 255, 255, 0.1);
     border-radius: $rounded-2;
-    transition: all 300ms;
-    padding: 0.77rem 1rem !important;
-    .nums{color: $basic;}
-    span{
-        letter-spacing: 2px;
-        font-size: $font-size-11;
+    background: rgba(255, 255, 255, 0.084);
+    backdrop-filter: blur(5px);
+    @include text-transition;
+
+    i {
+      color: $basic;
+      @include text-transition;
     }
-    &.active{
-        background-color: $basic;
-        span{
-            color: white;
-        }
+
+    &:hover {
+      background-color: $basic !important;
+      i {
+        color: white;
+      }
     }
+  }
+}
+.nav-link {
+  // font-family: $font-primary;
+  line-height: 12px;
+  border-radius: $rounded-2;
+  transition: all 300ms;
+  padding: 0.77rem 1rem !important;
+  .nums {
+    color: $basic;
+  }
+  span {
+    letter-spacing: 2px;
+    font-size: $font-size-11;
+  }
+  &.active {
+    background-color: $basic;
+    span {
+      color: white;
+    }
+  }
+}
+.offcanvas {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }

@@ -11910,8 +11910,19 @@ body {
   color: white;
 }
 
+.offcanvas {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
 .service-col2, .experience-col2, .blogs-col2, .contact-col2 {
   padding: 6.25rem 3.75rem 5.625rem 3.75rem;
+}
+@media screen and (max-width: 480px) and (orientation: portrait) {
+  .service-col2, .experience-col2, .blogs-col2, .contact-col2 {
+    padding: 2rem;
+  }
 }
 
 .home {
@@ -11928,6 +11939,9 @@ body {
 }
 .home-welcome__heading {
   font-size: calc(28px + 42 * (100vw - 320px) / 1600);
+}
+.home #profesion {
+  min-width: 170px;
 }
 
 .service-img-container {
