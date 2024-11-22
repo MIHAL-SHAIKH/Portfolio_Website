@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const mediaQuery = window.matchMedia('(max-width: 992px)');
+  const mediaQuery = window.matchMedia('(min-width: 992px)');
 
   if(mediaQuery.matches){
     // console.warn('logged',mediaQuery)
