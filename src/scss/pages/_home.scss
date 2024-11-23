@@ -20,7 +20,7 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("./public/home.jpg");
+    url("/public/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -43,7 +43,7 @@
 
 // service-row //
 .service-img-container {
-  @include row-img("./public/section2.jpg");
+  @include row-img("/public/section2.jpg");
 }
 
 // second col
@@ -125,9 +125,9 @@
 }
 
 .experience-img-container {
-  // @include row-img('../public/section3.jpg');
-  @include row-img("./public/section3.jpg");
-  // ./public
+  // @include row-img('./public/section3.jpg');
+  @include row-img("/public/section3.jpg");
+  // /public
 }
 // col2
 // tab only
@@ -212,7 +212,7 @@
 
 // blogs section
 .blogs-img-container {
-  @include row-img("./public/blogs.jpg");
+  @include row-img("/public/blogs.jpg");
 }
 .date-wrapper {
   line-height: 1em;
@@ -228,7 +228,7 @@
 }
 // contact section
 .contact-img-container {
-  @include row-img("./public/contact.jpg");
+  @include row-img("/public/contact.jpg");
 }
 .contact {
   &-info-card-box li {
