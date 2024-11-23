@@ -11932,7 +11932,7 @@ body {
 }
 
 .home {
-  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../public/home.jpg");
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/home.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -11951,10 +11951,10 @@ body {
 }
 
 .service-img-container {
-  background: url("../public/section2.jpg") center top;
+  background: url("../../public/section2.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 70vh;
   max-height: 929px;
 }
 
@@ -12031,10 +12031,10 @@ body {
 }
 
 .experience-img-container {
-  background: url("../public/section3.jpg") center top;
+  background: url("../../public/section3.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 70vh;
   max-height: 929px;
 }
 
@@ -12119,10 +12119,10 @@ body {
 }
 
 .blogs-img-container {
-  background: url("../public/blogs.jpg") center top;
+  background: url("../../public/blogs.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 70vh;
   max-height: 929px;
 }
 
@@ -12140,10 +12140,10 @@ body {
 }
 
 .contact-img-container {
-  background: url("../public/contact.jpg") center top;
+  background: url("../../public/contact.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 60vh;
+  min-height: 70vh;
   max-height: 929px;
 }
 
