@@ -11855,6 +11855,10 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+button {
+  all: unset;
+}
+
 body {
   font-size: 1.4rem;
   font-family: "Space Grotesk", sans-serif;
@@ -11920,19 +11924,21 @@ body {
 .experience-col2,
 .blogs-col2,
 .contact-col2 {
-  padding: 6.25rem 3.75rem 5.625rem 3.75rem;
+  padding: 2rem;
+  height: 130vh;
+  overflow-y: scroll;
 }
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media (min-width: 1024px) {
   .service-col2,
   .experience-col2,
   .blogs-col2,
   .contact-col2 {
-    padding: 2rem;
+    padding: 6.25rem 3.75rem 5.625rem 3.75rem;
   }
 }
 
 .home {
-  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/home.jpg");
+  background-image: linear-gradient(to left top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../public/land.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -11954,8 +11960,7 @@ body {
   background: url("../../public/section2.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 929px;
+  height: 100%;
 }
 
 .service-col2 .card-wrapper {
@@ -11968,7 +11973,7 @@ body {
 .card-wrapper {
   transition: all 300ms;
 }
-.card-wrapper .icon-small {
+.card-wrapper .icon-small i {
   font-size: 3rem;
   margin-bottom: 2.5rem;
   transition: all 300ms;
@@ -11982,25 +11987,38 @@ body {
   color: #696969;
   font-size: 0.9375rem;
   line-height: 1.7em;
-  transition: all 300ms;
+  max-height: 50px;
+  transition: max-height 3s ease, color 200ms ease;
+  display: -webkit-box; /* Establish a flex container in WebKit */
+  -webkit-box-orient: vertical; /* Define the box orientation */
+  -webkit-line-clamp: 2;
 }
-.card-wrapper .icon-big {
+.card-wrapper .icon-big i {
   font-size: 12.5rem;
   position: absolute;
-  top: -10%;
   right: -10%;
   color: rgb(123, 97, 255);
   opacity: 0.1;
+  bottom: -2rem;
+}
+@media (min-width: 768px) {
+  .card-wrapper .icon-big i {
+    top: -2rem;
+  }
+}
+.card-wrapper .btn-read-more:hover {
+  opacity: 0.8;
+  transition: all 300ms;
 }
 .card-wrapper:hover {
   background-color: rgb(123, 97, 255);
 }
 .card-wrapper:hover .card__header,
 .card-wrapper:hover .card__text,
-.card-wrapper:hover .icon-small {
+.card-wrapper:hover .icon-small i {
   color: white !important;
 }
-.card-wrapper:hover .icon-big {
+.card-wrapper:hover .icon-big i {
   color: white;
 }
 
@@ -12034,8 +12052,7 @@ body {
   background: url("../../public/section3.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 929px;
+  height: 100%;
 }
 
 .experience .nav,
@@ -12122,8 +12139,7 @@ body {
   background: url("../../public/blogs.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 929px;
+  height: 100%;
 }
 
 .date-wrapper {
@@ -12143,8 +12159,7 @@ body {
   background: url("../../public/contact.jpg") center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 929px;
+  height: 100%;
 }
 
 .contact-info-card-box li {
@@ -12164,12 +12179,7 @@ body {
   width: 40%;
   float: left;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .contact-heades {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 640px) {
+@media (min-width: 768px) {
   .contact-heades {
     width: 100%;
   }
@@ -12197,7 +12207,7 @@ body {
   font-size: 0.75rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 768px) {
   .offcanvas {
     max-width: 400px;
   }

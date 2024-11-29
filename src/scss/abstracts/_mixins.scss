@@ -5,19 +5,32 @@
 @mixin icon-big {
     font-size: 12.5rem;
     position: absolute;
-    top: -10%;
+    // top: -10%;
     right: -10%;
     color: $basic;
     opacity: .1;
+    //@include respond(desktop){
+      bottom: -2rem;
+      //}
+      @include respond(md){
+        top: -2rem;
+    }
   }
 @mixin row-img($url){
   background: url($url) center top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
-  max-height: 929px;
+  // min-height: 70vh;
+  // max-height: 929px;
+  height: 100%;
+
   // max-width: 100%;
   // animation: img_animation 1.5s ease;
+}
+@mixin clamp($line){
+  display: -webkit-box;          /* Establish a flex container in WebKit */
+  -webkit-box-orient: vertical; /* Define the box orientation */
+  -webkit-line-clamp: $line;
 }
 // animation
 
@@ -37,29 +50,49 @@
 // }
 // media queries
 
-@mixin respond($breakpoint){
-  @if $breakpoint == 'desktop'{
-    @media screen 
-    and (min-width:1024px){ @content;}
-  };
+$breakpoints: (
+  "xs": 320px,   // Extra small devices like older smartphones
+  "sm": 480px,   // Small devices like modern smartphones
+  "md": 768px,   // Medium devices like tablets
+  "lg": 1024px,  // Large devices like laptops
+  "xl": 1280px,  // Extra-large devices like desktops
+  "xxl": 1440px  // Extra-wide monitors
+);
 
-  @if $breakpoint == 'tablet'{
-    @media screen 
-    and (min-width:768px)
-    and (max-width:1024px){@content;}
-  };
-  @if $breakpoint == 'mobile-port-land'{
-    @media screen 
-    and (max-width:640px){@content;}
-  };
-  @if $breakpoint == 'mobile-land'{
-    @media screen 
-    and (max-width:640px)
-    and (orientation: landscape){@content;}
-  };
-  @if $breakpoint == 'mobile-port'{
-    @media screen 
-    and (max-width:480px)
-    and (orientation:portrait){@content;};
-    };
+@mixin respond($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "The breakpoint `#{$breakpoint}` is not defined in $breakpoints map.";
   }
+}
+
+
+// @mixin respond($breakpoint){
+//   @if $breakpoint == 'desktop'{
+//     @media screen 
+//     and (min-width:1024px){ @content;}
+//   };
+
+//   @if $breakpoint == 'tablet'{
+//     @media screen 
+//     and (min-width:768px)
+//     and (max-width:1024px){@content;}
+//   };
+//   @if $breakpoint == 'mobile-port-land'{
+//     @media screen 
+//     and (max-width:640px){@content;}
+//   };
+//   @if $breakpoint == 'mobile-land'{
+//     @media screen 
+//     and (max-width:640px)
+//     and (orientation: landscape){@content;}
+//   };
+//   @if $breakpoint == 'mobile-port'{
+//     @media screen 
+//     and (max-width:480px)
+//     and (orientation:portrait){@content;};
+//     };
+//   }

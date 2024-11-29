@@ -47,6 +47,23 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 
+  $('.btn-read-more').on('click', function() {
+
+    const parent = $(this).closest('.card-text-wrapper')
+    const cardText = parent.find('.card__text')
+
+    if (!cardText.length) return;
+
+    cardText.css({
+      '-webkit-line-clamp': 'unset',
+      'max-height':'100rem'
+    })
+
+    $(this).hide();
+
+    console.log('click!',this)
+  })
+
 
 
 
@@ -72,12 +89,15 @@ var swiper = new Swiper(".mySwiper", {
     640: {
       slidesPerView: 2,
     },
-    768: {
+    // 768: {
+    //   slidesPerView: 3,
+    // },
+    1024: {
       slidesPerView: 3,
     },
-    1024: {
+    1536: {
       slidesPerView: 4,
-    },
+    }
   },
 });
 // AOS.init();

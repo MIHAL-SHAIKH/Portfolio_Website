@@ -4,10 +4,12 @@
 .blogs-col2,
 .contact-col2 {
   // padding: 100px 60px 90px 60px;
-  padding: 6.25rem 3.75rem 5.625rem 3.75rem;
+  padding: 2rem;
+  height: 130vh;
+  overflow-y: scroll;
 
-  @include respond(mobile-port) {
-    padding: 2rem;
+  @include respond(lg) {
+    padding: 6.25rem 3.75rem 5.625rem 3.75rem;
   }
 }
 
@@ -21,6 +23,12 @@
       rgba(0, 0, 0, 0.4)
     ),
     url("../../public/home.jpg");
+  // background-image: linear-gradient(
+  //   to left top,
+  //   rgba(0, 0, 0, 0.4),
+  //   rgba(0, 0, 0, 0.4)
+  // ),
+  // url("../../public/land.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -58,7 +66,7 @@
 .card-wrapper {
   @include text-transition;
 
-  .icon-small {
+  .icon-small i {
     font-size: $font-size-48;
     margin-bottom: 2.5rem;
     @include text-transition;
@@ -72,19 +80,27 @@
     color: $text-gray;
     font-size: $font-size-15;
     line-height: 1.7em;
-    @include text-transition;
+    max-height: 50px;
+    transition:
+      max-height 3s ease,
+      color 200ms ease;
+    @include clamp(2);
   }
-  .icon-big {
+  .icon-big i {
     @include icon-big;
+  }
+  .btn-read-more:hover{
+    opacity: 0.8;
+    @include text-transition;
   }
   &:hover {
     background-color: $basic;
     .card__header,
     .card__text,
-    .icon-small {
+    .icon-small i {
       color: white !important;
     }
-    .icon-big {
+    .icon-big i {
       color: white;
     }
   }
@@ -247,10 +263,7 @@
   &-heades {
     width: 40%;
     float: left;
-    @include respond(tablet) {
-      width: 100%;
-    }
-    @include respond(mobile-port-land) {
+    @include respond(md) {
       width: 100%;
     }
     // @include respond(mobile-port-land){background-color: red !important;};
@@ -284,7 +297,7 @@
 // offcanvas
 .offcanvas {
   // max-width: 400px;
-  @include respond(desktop) {
+  @include respond(md) {
     max-width: 400px;
   }
   &-btn__close {
