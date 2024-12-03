@@ -11883,6 +11883,9 @@ body {
   backdrop-filter: blur(5px);
   transition: all 300ms;
 }
+.navbar .download-cv:hover {
+  animation: jello 1s;
+}
 .navbar .download-cv i {
   color: rgb(123, 97, 255);
   transition: all 300ms;
@@ -11924,8 +11927,17 @@ body {
 .experience-col2,
 .blogs-col2,
 .contact-col2 {
-  padding: 2rem;
+  padding-inline: 2rem;
+  padding-block: 2rem 3rem;
   overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  .service-col2,
+  .experience-col2,
+  .blogs-col2,
+  .contact-col2 {
+    padding: 6.25rem 3.75rem 5.625rem 3.75rem;
+  }
 }
 @media (min-width: 1024px) {
   .service-col2,
@@ -11933,7 +11945,6 @@ body {
   .blogs-col2,
   .contact-col2 {
     height: 130svh;
-    padding: 6.25rem 3.75rem 5.625rem 3.75rem;
   }
 }
 
@@ -11945,7 +11956,7 @@ body {
   background-position: center center;
 }
 .home-wrapper {
-  top: 45%;
+  top: 43%;
 }
 @media (min-width: 768px) {
   .home-wrapper {
@@ -11961,7 +11972,7 @@ body {
 .home-welcome__heading {
   font-size: calc(28px + 42 * (100vw - 320px) / 1600);
 }
-.home #profesion {
+.home #profession {
   min-width: 170px;
 }
 
@@ -12047,9 +12058,14 @@ body {
 .experience-tab-wrapper .nav-item {
   margin-right: 4%;
 }
+.experience-tab-wrapper .nav-link.active {
+  background-color: rgba(123, 97, 255, 0.04) !important;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
 .experience-tab-wrapper .nav-link {
   color: #777777;
-  padding: 0 0 0.8rem 0 !important;
+  padding: 8px 8px 0px 8px;
   font-size: 0.9375rem;
 }
 .experience-tab-wrapper .nav-link.active::after {

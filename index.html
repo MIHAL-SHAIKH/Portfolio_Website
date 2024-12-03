@@ -13,6 +13,10 @@
     />
 
     <script defer src="node_modules\autotyping\dist\AutoTyping.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script defer src="index.js"></script>
 
     <link
@@ -109,7 +113,7 @@
           <a
             href="public/resume/mihal_shaikh.pdf"
             download="mihal_shaikh.pdf"
-            class="download-cv text-white fw-bolder btn py-2 px-3 d-none d-lg-block"
+            class="download-cv text-white fw-bolder btn py-2 px-3 d-none d-lg-block animate__animated"
           >
             <i class="fa-regular fa-file me-2"></i>
             Download CV
@@ -243,7 +247,11 @@
           <li
             class="d-flex align-items-center justify-content-between flex-row-reverse"
           >
-            <a onmouseenter="toggleActive(this)" class="side__icon" href="https://www.instagram.com/shaikhmihal?igsh=eHppMmthanBveTMw">
+            <a
+              onmouseenter="toggleActive(this)"
+              class="side__icon"
+              href="https://www.instagram.com/shaikhmihal?igsh=eHppMmthanBveTMw"
+            >
               <i class="fa-brands fa-instagram"></i>
             </a>
             <div class="copy-link opacity-0 d-none d-lg-inline">
@@ -304,7 +312,9 @@
         id="home"
         class="home vh-100 active-section overflow-y-auto position-relative"
       >
-        <div class="home-wrapper container position-absolute start-50 translate-middle">
+        <div
+          class="home-wrapper container position-absolute start-50 translate-middle"
+        >
           <div class="row">
             <div class="col-12">
               <div class="home-welcome text-start">
@@ -314,7 +324,10 @@
                 <h1 class="home-welcome__heading text-white fw-bolder">
                   My name Mihal Shaikh, a <br />
                   Mumbai based
-                  <span class="text-white d-inline-block" id="profesion"></span>
+                  <span
+                    class="text-white d-inline-block"
+                    id="profession"
+                  ></span>
                 </h1>
               </div>
             </div>
@@ -327,10 +340,12 @@
       >
         <div class="service-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="service-img-container w-100"></div>
+            <div class="service-img-container w-100 animate__animated animate__fadeInLeft"></div>
           </div>
           <div class="service-col2 col-12 col-md-6 align-items-stretch">
-            <div class="card-wrapper w-100 position-relative overflow-hidden">
+            <div class="card-wrapper w-100 position-relative overflow-hidden animate__animated animate__fadeInRight"
+            [style.animationDelay]="i * 0.3 + 's'"
+            >
               <div class="car_d">
                 <!-- <i class="icon-small text-primary fa-solid fa-code"></i> -->
                 <span class="icon-small text-primary">
@@ -477,10 +492,10 @@
       >
         <div class="experience-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="experience-img-container w-100"></div>
+            <div class="experience-img-container w-100 animate__animated animate__fadeInLeft"></div>
           </div>
           <div class="experience-col2 col-12 col-md-6 align-items-stretch">
-            <p class="experience-head">
+            <p id="example" class="experience-head">
               I am a front-end developer with a passion for creating responsive
               and user-friendly web interfaces. I enjoy learning from my
               surroundings and embracing new experiences. During my academic
@@ -760,10 +775,24 @@
       >
         <div class="blogs-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="blogs-img-container w-100"></div>
+            <div class="blogs-img-container w-100 animate__animated animate__fadeInLeft"></div>
           </div>
           <div class="blogs-col2 col-12 col-md-6 align-items-stretch">
             <div class="blogs-card-wrapper d-flex align-items-start">
+              <h5 class="date-wrapper text-white bg-primary text-center">
+                <span class="date fw-bolder">04</span>
+                <span class="monthe fw-light text-uppercase">dec</span>
+              </h5>
+              <div class="ps-4 pb-2">
+                <h3 class="blogs-card-header2 text-white fw-bolder">
+                  Looking for Developers to Collaborate and Learn Together!
+                </h3>
+                <p class="blogs-card-para">
+                  Hi everyone! I’m working on a project using a Figma design from Frontend Mentor and would love to collaborate with fellow developers. I’m a front-end developer, but I’m looking for both front-end and backend developers to share ideas, learn from each other, and build something amazing together. Let’s connect and grow as a team!
+                </p>
+              </div>
+            </div>
+            <!-- <div class="blogs-card-wrapper d-flex align-items-start">
               <h5 class="date-wrapper text-white bg-primary">
                 <span class="date fw-bolder">28</span>
                 <span class="monthe fw-light text-uppercase">Mar</span>
@@ -813,24 +842,7 @@
                   beatae.
                 </p>
               </div>
-            </div>
-            <div class="blogs-card-wrapper d-flex align-items-start">
-              <h5 class="date-wrapper text-white bg-primary">
-                <span class="date fw-bolder">28</span>
-                <span class="monthe fw-light text-uppercase">Mar</span>
-              </h5>
-              <div class="ps-4 pb-2">
-                <h3 class="blogs-card-header2 text-white fw-bolder">
-                  Product Designer Freelancer
-                </h3>
-                <p class="blogs-card-para">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae.
-                </p>
-              </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -841,7 +853,7 @@
       >
         <div class="contact-row row vh-100 overflow-y-scroll">
           <div class="col-12 col-md-6 align-items-stretch p-0">
-            <div class="contact-img-container w-100"></div>
+            <div class="contact-img-container w-100 animate__animated animate__fadeInLeft"></div>
           </div>
           <div class="contact-col2 col-12 col-md-6 align-items-stretch">
             <div class="contact-info-card-wrapper w-100">
@@ -856,11 +868,15 @@
                 </li>
                 <li>
                   <div class="contact-heades text-white">LinkedIn</div>
-                  <div class="contact-data">www.linkedin.com/in/mihal-shaikh-4a5003299</div>
+                  <div class="contact-data">
+                    www.linkedin.com/in/mihal-shaikh-4a5003299
+                  </div>
                 </li>
                 <li>
                   <div class="contact-heades text-white">Address</div>
-                  <div class="contact-data">Gadkari road, Chembur, Mumbai 400074</div>
+                  <div class="contact-data">
+                    Gadkari road, Chembur, Mumbai 400074
+                  </div>
                 </li>
               </ul>
             </div>

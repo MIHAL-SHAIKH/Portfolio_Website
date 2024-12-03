@@ -115,7 +115,7 @@ var swiper = new Swiper(".mySwiper", {
 //     console.log(section)
 // });
 const myText = new AutoTyping({
-  id: "profesion",
+  id: "profession",
 
   typeText: [
     "Programmer",
@@ -139,3 +139,18 @@ function toggleActive(el){
 
   el.classList.toggle('active')
 }
+// const myExperience = new AutoTyping({
+//   id: 'example', // Your HTML element id without #
+//   typeText: [
+//       `I am a front-end developer with a passion for creating responsive 
+//       and user-friendly web interfaces. I enjoy learning from my 
+//       surroundings and embracing new experiences. During my academic 
+//       journey and internships, I worked on several projects that honed 
+//       my skills in web development. Currently, I am in the first year of 
+//       my MCA program, and my learning never stops as I strive to stay 
+//       updated with the latest technologies and trends in the field.`
+//   ], // Your paragraph as a single string
+//   typeSpeed: 50, // Speed of typing (optional)
+//   deleteSpeed: 0, // Skip deletion to type once (optional)
+//   loop: false, // Do not loop typing (optional)
+// }).init();
