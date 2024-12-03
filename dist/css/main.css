@@ -11944,6 +11944,14 @@ body {
   background-size: cover;
   background-position: center center;
 }
+.home-wrapper {
+  top: 45%;
+}
+@media (min-width: 768px) {
+  .home-wrapper {
+    top: 50%;
+  }
+}
 .home-welcome {
   padding: 0 3.5%;
 }

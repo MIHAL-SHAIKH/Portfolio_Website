@@ -33,6 +33,13 @@
   background-size: cover;
   background-position: center center;
 
+  &-wrapper{
+    top: 45%;
+    
+    @include respond(md){
+      top: 50%;
+    }
+  }
   &-welcome {
     padding: 0 3.5%;
   }
