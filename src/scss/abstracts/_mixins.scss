@@ -22,7 +22,8 @@
   background-repeat: no-repeat;
   // min-height: 70vh;
   // max-height: 929px;
-  height: 100%;
+  @include respond(sm){height: $section-height;}
+  height: 70vh;
 
   // max-width: 100%;
   // animation: img_animation 1.5s ease;
